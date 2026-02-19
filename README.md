@@ -1,6 +1,8 @@
 # Movie Finder Agent
 
-A production-ready AI agent built with Microsoft Agent Framework (.NET) that identifies movies based on user descriptions. The agent runs as an HTTP service in Azure Container Apps and uses Microsoft Foundry models.
+A production-ready AI agent built with Microsoft Agent Framework (.NET) that identifies movies based on user descriptions. The agent runs as an HTTP service in Azure Container Apps and uses Microsoft Foundry models (Azure OpenAI).
+
+> **Note:** Before finalizing this implementation, please review [QUESTIONS.md](./QUESTIONS.md) which contains important configuration decisions that need your input.
 
 ## Features
 
@@ -67,7 +69,9 @@ Readiness check endpoint.
 
 ### Required
 
-- `AZURE_AI_PROJECT_ENDPOINT`: Your Azure AI Foundry project endpoint (e.g., `https://your-project.cognitiveservices.azure.com/`)
+- `AZURE_AI_PROJECT_ENDPOINT`: Your Azure AI Foundry project endpoint (e.g., `https://your-project.openai.azure.com/`)
+  - **Note:** This uses Azure OpenAI endpoints that are part of your Azure AI Foundry project
+  - The endpoint should point to your Azure OpenAI resource associated with Foundry
 - `AZURE_AI_MODEL_DEPLOYMENT_NAME`: Model deployment name in your Foundry project (default: `gpt-4o-mini`)
 
 ### Optional
