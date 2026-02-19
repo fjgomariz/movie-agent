@@ -2,8 +2,6 @@
 
 A production-ready AI agent built with Microsoft Agent Framework (.NET) that identifies movies based on user descriptions. The agent runs as an HTTP service in Azure Container Apps and uses Microsoft Foundry models (Azure OpenAI).
 
-> **Note:** Before finalizing this implementation, please review [QUESTIONS.md](./QUESTIONS.md) which contains important configuration decisions that need your input.
-
 ## Features
 
 - **Movie Identification**: Accepts a description and returns structured movie information
