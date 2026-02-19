@@ -466,4 +466,3 @@ For issues and questions:
 - Open an issue in this repository
 - Refer to [Microsoft Agent Framework documentation](https://learn.microsoft.com/azure/ai-studio/how-to/develop/agents)
 - Check [Azure Container Apps documentation](https://learn.microsoft.com/azure/container-apps/)
-
